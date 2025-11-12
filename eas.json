@@ -6,16 +6,29 @@
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": {
+        "NODE_ENV": "development"
+      }
     },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "developmentClient": false,
+      "env": {
+        "NODE_ENV": "staging"
+      }
     },
     "production": {
-      "android":{
+      "developmentClient": false,
+      "distribution": "store",
+      "android": {
         "buildType": "apk"
       },
-      "autoIncrement": true
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "autoIncrement": true,
+      "releaseChannel": "production"
     }
   },
   "submit": {
