@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "pk-control-app",
-    "slug": "pk-control-app",
+    "slug": "pk-control",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -19,7 +19,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.itsmithun.pkcontrol"
     },
     "web": {
       "output": "static",
@@ -43,6 +44,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "389b9f04-5c40-43a8-ae5d-7fec9c3e3a0c"
+      }
+    },
+    "owner": "itsmithun"
   }
 }
